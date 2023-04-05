@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Image = "https://static.vecteezy.com/system/resources/thumbnails/009/357/549/small_2x/eps10-grey-cake-line-icon-isolated-on-white-background-cake-with-candles-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-web-site-design-logo-pictogram-and-mobile-application-free-vector.jpg";
+}
+
+<div class="container_show">
+   
+    
+    <img src="@Model.Picture" onerror="this.onerror=null;this.src='@ViewBag.Image'" alt="Not available image" style="border-radius:5px;">
+    <div class="card_show">
+        <h2>@Model.Name</h2>
+        <div class="box_price">
+            <p>Price per day: </p>
+            <h3>@Model.PricePerDay</h3>
+
+        </div>
+        <div class="box_reservation">
+            <form method="GET">
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" name="startdate" 
+                           value="@ViewBag.StartDate.ToString("yyyy-MM-dd")">
+                    <input type="date" class="form-control" name="enddate"
+                           value="@ViewBag.EndDate.ToString("yyyy-MM-dd")">
+                    <button class="btn btn-outline-success" type="submit">View ammount</button>
+                </div>
+            </form>
+@*            <p>@ViewBag.StartDate</p>
+            <p>@ViewBag.EndDate</p>*@
+            
+            <p>@ViewBag.Ammount</p>
+            
+            
+            
+            
+        </div>      
+
+    </div>
+
+</div>

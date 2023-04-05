@@ -1,0 +1,10 @@
+﻿<div class="containervh">
+    @foreach (RentalCarApp.Models.Vehicle vehicle in ViewBag.vehicles)
+    {
+       
+        @Html.Partial("VehicleInfo", vehicle)
+
+       
+    }
+</div>
+

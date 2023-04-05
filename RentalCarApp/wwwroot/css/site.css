@@ -1,0 +1,94 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.box1 img{
+    border-radius:5px;
+}
+
+.container1{
+    width:100%;
+    display:flex;
+    gap:25px;
+    justify-content:space-around;
+    background-color:lightgrey;
+    border-radius:5px;
+    box-shadow: 20px 20px 50px 15px grey;
+}
+
+.box1{
+    width:30%;
+}
+
+.box2 p{
+    font-size:25px;
+    font-weight:5px;
+}
+
+.buton1{
+    background-color:royalblue;
+    border-radius:5px;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+}
+
+
+.buton1:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.containervh {
+    width: 100%;
+    display: flex;
+    gap:35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.carbox{
+    width:30%;
+    border-radius:5px;
+    background-color:lightgrey;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.carbox h2{
+    margin-top: 5px;
+    margin-left:5px;
+    font-size:25px;
+    font-weight:15px;
+    color: darkblue;
+}
+
+.carbox p {
+    margin-left: 5px;
+    color:black;
+}
+
+.carbox:hover{
+    background-color:darkgrey;
+    transition-duration:1s;
+}
+
+.carbox img{
+    width:100%;
+}

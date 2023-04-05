@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Image = "https://static.vecteezy.com/system/resources/thumbnails/009/357/549/small_2x/eps10-grey-cake-line-icon-isolated-on-white-background-cake-with-candles-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-web-site-design-logo-pictogram-and-mobile-application-free-vector.jpg";
+}
+
+
+
+    <div class="carbox">
+
+        <a href="/vehicles/Show/@Model.Id" class="text-decoration-none">
+
+            <img src="@Model.Picture" onerror="this.onerror=null;this.src='@ViewBag.Image'" alt="Not available image" style="border-radius:5px;">
+            <h2>@Model.Name</h2>
+            <p>Price per day: @Model.PricePerDay $</p>
+
+        </a>
+
+
+    </div>
+
